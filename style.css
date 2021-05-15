@@ -93,6 +93,19 @@ body{
     margin-top: 15px;
 
 }
+.navbar{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.input-group{
+ display: flex;
+ flex-wrap: nowrap;
+}
+.container-fluid{
+    display: flex;
+}
+
 #view-more{
     display: flex;
     justify-content: space-between;
@@ -108,7 +121,13 @@ body{
     border-radius: 5px;
     background-color: rgb(221, 223, 223);;
 }
+ #input-search{
+     max-width: 400px;
+    width: 100%;
+    margin-left: 50px;
+    border: 2px solid black;
 
+}
 #input-1{
     width: 130px;
     height: 40px;
@@ -186,7 +205,13 @@ button{
     }
     
 
-    
+    td{
+        padding-right: 15px;
+    }
+
+    span:hover{
+        color: cyan;
+    }
     
 #btn-down{
     width: 40px;
@@ -205,6 +230,13 @@ button{
     }
     ul li:hover{
         color: turquoise;
+    }
+    .all-category p{
+        line-height: 5px;
+        font-size: 12px;
+    }
+    .all-category:hover{
+        color: black;
     }
 
     .image{
@@ -241,7 +273,7 @@ button{
     }
 
     .button-featured{
-        font-size: 5px;
+        font-size: 9px;
         color: black;
         font-weight: bold;
         border: 1px solid gold;
@@ -308,8 +340,8 @@ button{
     }
 
     #footer{
-        padding: 0px 50px 0px 50px;
-        margin: 10px;
+        display: flex;
+        flex-wrap: wrap;
     }
     #footer div{
         font-size: 10px;
@@ -324,6 +356,7 @@ button{
     
     #footer-hover,p:hover{
         color: turquoise;
+        
     }
 
     #btn-bars{
@@ -345,6 +378,44 @@ button{
 
     }
 
+    
+    @media only screen and (max-width: 700px) {
+         
+        div #dropdown{
+            display: none;
+          }
+    }
+
+    @media only screen and (max-width: 700px) {
+         
+        ul #dropdown-list{
+          width: 340px !important;
+          overflow: scroll;
+
+          }
+    }
+    
+    @media only screen and (max-width: 700px) {
+         
+        a {
+          margin-left: 30px;
+          }
+    }
+    
+    @media only screen and (max-width: 700px) {
+         
+        buton .header-image {
+          padding-right: 40px;
+          }
+    }
+    
+
+    @media only screen and (max-width: 700px) {
+         
+        div .input-group{
+            display: none;
+          }
+    }
 
     @media only screen and (max-width: 400px) {
          
@@ -370,12 +441,9 @@ button{
 
 
 
-    @media only screen and (min-width: 401px)  {
-         
-        #fa-bars{
-            display: none;
-          }
 
-          
-          }
-    }
+    @media only screen and (max-width: 600px) {
+        p {
+          font-size: 20px;
+        }
+      }
